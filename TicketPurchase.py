@@ -12,7 +12,7 @@ def get_ticket_request():
 
 # Function to handle the ticket sale
 def sell_tickets():
-    total_tickets = 20
+    total_tickets = 10
     buyers = 0
 
     while total_tickets > 0:
@@ -30,4 +30,5 @@ def sell_tickets():
 
 # Run the ticket selling process
 sell_tickets()
+
 
