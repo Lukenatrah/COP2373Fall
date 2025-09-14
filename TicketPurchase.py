@@ -12,23 +12,24 @@ def get_ticket_request():
 
 # Function to handle the ticket sale
 def sell_tickets():
-    total_tickets = 10
+    tickets_left = 10
     buyers = 0
 
-    while total_tickets > 0:
-        print(f"\nTickets remaining: {total_tickets}")
+    while tickets_left > 0:
+        print(f"\nTickets remaining: {tickets_left}")
         requested = get_ticket_request()
 
-        if requested <= total_tickets:
-            total_tickets -= requested
+        if requested <= tickets_left:
+            tickets_left -= requested
             buyers += 1
-            print(f"You bought {requested} ticket(s). {total_tickets} remaining.")
+            print(f"You bought {requested} ticket(s). {tickets_left} remaining.")
         else:
-            print(f"Only {total_tickets} tickets left. You can't buy {requested}.")
+            print(f"Only {tickets_left} tickets left. You can't buy {requested}.")
 
     print(f"\nAll tickets sold. Total buyers: {buyers}")
 
 # Run the ticket selling process
 sell_tickets()
+
 
 
