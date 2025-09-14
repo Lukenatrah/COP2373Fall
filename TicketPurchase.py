@@ -2,7 +2,7 @@
 def get_ticket_request():
     while True:
         try:
-            num = int(input("How many tickets would you like to buy (max 4)? "))
+            num = int(input("What is the amount of tickets being purchased? "))
             if 1 <= num <= 4:
                 return num
             else:
@@ -30,3 +30,4 @@ def sell_tickets():
 
 # Run the ticket selling process
 sell_tickets()
+
